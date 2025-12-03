@@ -102,7 +102,7 @@ class Product {
   String toRawJson() => json.encode(toJson());
 
   factory Product.fromJson(Map<String, dynamic> json) => Product(
-    id: json["id"],
+    id: json["product_id"],
     title: json["title"],
     description: json["description"],
     category: json["category"],
@@ -135,7 +135,7 @@ class Product {
   );
 
   Map<String, dynamic> toJson() => {
-    "id": id,
+    "product_id": id,
     "title": title,
     "description": description,
     "category": category,
